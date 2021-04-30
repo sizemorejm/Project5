@@ -1,0 +1,32 @@
+""Inventory Test #2""
+""Verify Drizzt the Quick is in the encounter""
+""Verify Drizzt has an inventory""
+""P 6 should fail""
+Drizzt the Quick the warrior has entered the battle
+Inserting entity: Drizzt the Quick
+Warrior: Drizzt the Quick
+	Current HP: 12
+	Strength: 14
+[Nameless Chest Armor]: 
+	Type : chest
+	Armor: 10
+	Damage: 0
+
+[Random Weapon]: 
+	Type : mace
+	Armor: 0
+	Damage: 1
+
+[Dark Saber]: 
+	Type : lazer-sword
+	Armor: 0
+	Damage: 25
+
+[Sword of a Thousand Truths]: 
+	Type : sword
+	Armor: 0
+	Damage: 20
+
+Attempted to access an entity with a UID: 6 that did not exist within the list.  Exiting.
+Entity::~Entity()
+inventory dtr called

@@ -1,0 +1,74 @@
+""Running Full Party Test""
+""Your rogue will pickpocket various entities""
+Hobgoblin the monster has entered the battle
+Inserting entity: Hobgoblin
+Great Goblin the monster has entered the battle
+Inserting entity: Great Goblin
+Bad Goblin 1 the monster has entered the battle
+Inserting entity: Bad Goblin 1
+Elva the rogue has entered the battle
+Inserting entity: Elva
+10
+Rogue: Elva
+	Current HP: 7
+	Agility: 17
+--------------------------------
+12
+Goblin: Bad Goblin 1
+	Current HP: 6
+	HIDDEN INVENTORY
+--------------------------------
+3
+Goblin: Great Goblin
+	Current HP: 75
+	HIDDEN INVENTORY
+--------------------------------
+2
+Goblin: Hobgoblin
+	Current HP: 25
+	HIDDEN INVENTORY
+Elva has looted an item: Riftmaker
+Elva has looted an item: aghanim's scepter
+Elva has looted an item: Heart of Tarrasque
+10
+Rogue: Elva
+	Current HP: 7
+	Agility: 17
+[Heart of Tarrasque]: 
+	Type : shield
+	Armor: 22
+	Damage: 0
+
+[aghanim's scepter]: 
+	Type : staff
+	Armor: 0
+	Damage: 4
+
+[Riftmaker]: 
+	Type : staff
+	Armor: 0
+	Damage: 4
+
+--------------------------------
+12
+Goblin: Bad Goblin 1
+	Current HP: 6
+	HIDDEN INVENTORY
+--------------------------------
+3
+Goblin: Great Goblin
+	Current HP: 75
+	HIDDEN INVENTORY
+--------------------------------
+2
+Goblin: Hobgoblin
+	Current HP: 25
+	HIDDEN INVENTORY
+Entity::~Entity()
+inventory dtr called
+Entity::~Entity()
+inventory dtr called
+Entity::~Entity()
+inventory dtr called
+Entity::~Entity()
+inventory dtr called
