@@ -7,12 +7,6 @@ Ninja::Ninja(JsonEntityBuilder &builder, JsonItemBuilder & inventory, uint32_t u
     std::cout << Name() << " the ninja has entered the battle" << std::endl;
 }
 
-void Ninja::Slice(Entity* target)
-{
-    Attack(target, GetAgility() * 2.0, "Slice");
-   
-}
-
 
 void Ninja::Shuriken(Entity* target)
 {
@@ -23,7 +17,7 @@ void Ninja::Shuriken(Entity* target)
 
 void Ninja::Kamikaze(Entity * target)
 {
-     _hp = 0;
+    Attack(target, CurrentHP() == 0, "Kamikaze Self Damage");
     Attack(target, 50, "Kamikaze");
 }
 
@@ -40,32 +34,27 @@ void Ninja::OutputStatus() const
 
 void Ninja::WeaponAttack(Entity * target)
 {
-    Attack(target, 4.0, "Dagger Attack");
+    Attack(target, 4.0, "Slice");
 }
 
 
 void Ninja::UseAction(Entity * target, const std::string& spellName, const std::string & args)
 {
-    if(spellName == "pick_pocket")
-    {
-        uint32_t itemUID = std::stoul(args);
-        PickPocket(target, itemUID);
-        return;
-    }
+    
 
     if(spellName == "weapon_attack")
     {
         WeaponAttack(target);
         return;
     }
-    if(spellName == "backstab")
+    if(spellName == "Shuriken")
     {
-        Backstab(target);
+        Shuriken(target);
         return;
     }
-    if(spellName == "blindside")
+    if(spellName == "Kamikaze")
     {
-        Blindside(target);
+        Kamikaze(target);
         return;
     }
 
