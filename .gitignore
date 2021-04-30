@@ -3,6 +3,7 @@
 !*.hpp
 !README.md
 !Makefile
+!makefile
 !.gitignore
 !checkall.bash
 !*.json
