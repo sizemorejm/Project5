@@ -13,6 +13,7 @@
 #include "mage.hpp"
 #include "rogue.hpp"
 #include "priest.hpp"
+#include "ninja.hpp"
 
 
 
@@ -79,6 +80,10 @@ int main(int argc, char *argv[])
                 iss >> input >> who >> type >> id;
                 switch(type)
                 {
+
+                case 'n':
+                    encounter.AddEntity(new Ninja(builder, inventory, id));
+                    break;
                 case 'w': 
                     encounter.AddEntity(new Warrior(builder, inventory, id));
                     break;

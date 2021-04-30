@@ -121,6 +121,16 @@
             "inventory" : []
         }, 
         {
+            "UID" : 30,
+            "hp" : 15,
+            "Name" : "<SELECT_INFO>",
+            "race" : "Human",
+            "class" : "Ninja",
+            "agility" : 13,
+            "weapon_damage" : 4,
+            "inventory" : []
+        },
+        {
             "UID" : 11, 
             "hp" : 9,
             "Name" : "Milton",
