@@ -19,7 +19,7 @@ void Ninja::Kamikaze(Entity * target)
 {
     
     Attack(target, 50, "Kamikaze");
-    Attack(this, CurrentHP() == 0, "Kamikaze Self Damage");
+    Attack(this, CurrentHP(), "Kamikaze Self Damage");
 }
 
 void Ninja::OutputStatus() const
