@@ -10,9 +10,9 @@ Ninja::Ninja(JsonEntityBuilder &builder, JsonItemBuilder & inventory, uint32_t u
 
 void Ninja::Shuriken(Entity* target)
 {
-    Attack(target, GetAgility() * 2.0, "Shuriken");
-    Attack(target, GetAgility() * 2.0, "Shuriken");
-    Attack(target, GetAgility() * 2.0, "Shuriken");
+    Attack(target, GetAgility() * 2.2, "Shuriken");
+    Attack(target, GetAgility() * 2.2, "Shuriken");
+    Attack(target, GetAgility() * 2.2, "Shuriken");
 }
 
 void Ninja::Kamikaze(Entity * target)
