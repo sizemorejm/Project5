@@ -17,8 +17,9 @@ void Ninja::Shuriken(Entity* target)
 
 void Ninja::Kamikaze(Entity * target)
 {
-    Attack(target, CurrentHP() == 0, "Kamikaze Self Damage");
+    
     Attack(target, 50, "Kamikaze");
+    Attack(this, CurrentHP() == 0, "Kamikaze Self Damage");
 }
 
 void Ninja::OutputStatus() const
