@@ -1,5 +1,5 @@
 #include "ninja.hpp"
-
+//James
 
 Ninja::Ninja(JsonEntityBuilder &builder, JsonItemBuilder & inventory, uint32_t uid) : 
         Entity(builder, inventory, uid)
